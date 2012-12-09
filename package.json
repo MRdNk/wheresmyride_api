@@ -1,9 +1,14 @@
 {
-    "name": "application-name"
+    "name": "wheresmyride_api"
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
       "express": "2.5.2"
     , "jade": ">= 0.0.1"
+    , "node.io": "0.4.x"
+  }
+  , "engines": {
+      "node": "0.8.x"
+    , "npm": "1.1.x"
   }
 }
