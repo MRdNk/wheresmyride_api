@@ -7,19 +7,20 @@ var services = new Services();
 
 
 (function () {
-  console.log(new Date());
+  // console.log(new Date());
   services.addServices(function (err, success) {
     if (err) {
       console.error (err);
     } else {
-      // console.log ('Services: ', success);
-      services.getBaseLink(function (err, baselinks_success) {
+      
+      console.log ('Services: ', success);
+      // services.getBaseLink(function (err, baselinks_success) {
         // console.log ('Base Links: ', err, baselinks_success);
         // console.log(new Date());
-      });
+      // });
     }
   });
-  console.log(new Date());
+  // console.log(new Date());
 }).call();
 
 /*(function () {

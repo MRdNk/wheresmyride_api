@@ -5,13 +5,20 @@
 
 var express = require('express');
 var routes = require('./routes');
+var pg = require('pg');
 
 var app = module.exports = express.createServer();
 
 process.scrape_counter = 0;
+process.env.DATABASE_URL = 'ec2-54-243-241-130.compute-1.amazonaws.com';
+
+
+pg.connect(process.env.DATABASE_URL, function (err, client) {
+  var query = client.query('CREATE TABLE user (username varchar(50));');
+  
+});
 
 // Configuration
-
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
