@@ -8,6 +8,8 @@ var routes = require('./routes');
 
 var app = module.exports = express.createServer();
 
+process.scrape_counter = 0;
+
 // Configuration
 
 app.configure(function(){
