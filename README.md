@@ -1,4 +1,4 @@
-A JSON API for Bus Service Information: in Bristol
+A JSON API for Bus Service Information in Bristol
 =====================================
 
 Scrapes for Buses, and their routes (stops)
